@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+header {
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+
+header nav .header__1 img {
+  width: 240px;
+}
+
+header nav .header__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .header__2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 12px;
+}
+
+header nav .header__2 ul li {
+  margin-right: 12px;
+}
+
+header nav .header__2 ul li:last-child {
+  margin-right: 0;
+}
+
+header nav .header__2 ul li a {
+  font-weight: 400;
+  color: #838383;
+  text-transform: uppercase;
+}
+
+header nav .header__2 ul li:hover a {
+  color: #05448E;
+  font-weight: 600;
+}
+
+header nav .header__2 ul .active a {
+  color: #05448E;
+  font-weight: 600;
+}
+
+header nav .header__2 .header__phone {
+  margin-right: 12px;
+}
+
+header nav .header__2 .header__phone a {
+  color: #05448E;
+  font-family: "Arial";
+  font-size: 20px;
+}
+
+header nav .header__2 .header__phone a i {
+  font-size: 17px;
+}
+
+header nav .header__2 .header__myaccount a {
+  background-color: #05448E;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 12px 17px;
+  border-radius: 10px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.cover {
+  background-image: url("../src/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  height: 550px;
+}
+
+.cover .container {
+  position: relative;
+  height: 100%;
+}
+
+.cover .container .cover__info {
+  width: 30%;
+  position: absolute;
+  right: 10%;
+  top: 22%;
+}
+
+.cover .container .cover__info h1 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.cover .container .cover__info h1 .yellow {
+  color: #FECE00;
+}
+
+.cover .container .cover__info a {
+  display: block;
+  width: 70%;
+  background-color: #FFFFFF;
+  color: #05448E;
+  padding: 15px 42px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.cover .container .cover__slick-dots {
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 2%;
+  left: calc(50% - 66px);
+}
+
+.cover .container .cover__slick-dots .cover__dot {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #CCCCCC;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cover .container .cover__slick-dots .active {
+  background-color: #CCCCCC;
+}
+
+.plans .plans__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.plans .plans__title h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.plans .plans__title hr {
+  margin: 0 auto;
+  border-bottom: 2px solid #05448E;
+}
+
+.plans .plans__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plans .plans__list .plan {
+  width: 24%;
+  border: 2px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 24px 20px;
+}
+
+.plans .plans__list .plan .plan__name {
+  color: #777777;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.plans .plans__list .plan .plan__velocity {
+  color: #05448E;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plans .plans__list .plan .plan__velocity span {
+  font-size: 45px;
+}
+
+.plans .plans__list .plan .plan__type {
+  color: #777777;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -11px;
+}
+
+.plans .plans__list .plan .plan__price {
+  font-size: 20px;
+  font-weight: 400;
+  color: #505050;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.plans .plans__list .plan .plan__price span {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.plans .plans__list .plan .plan__features {
+  font-size: 15px;
+  font-weight: 300;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 14px;
+}
+
+.plans .plans__list .plan .plan__features div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans .plans__list .plan .plan__features div img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.plans .plans__list .plan .plan__other-info {
+  padding: 20px 0;
+}
+
+.plans .plans__list .plan .plan__other-info i {
+  color: #05448E;
+}
+
+.plans .plans__list .plan .plan__other-info a {
+  text-decoration: underline;
+  color: #05448E;
+}
+
+.plans .plans__list .plan .plan__hire {
+  background-color: #05448E;
+  color: white;
+  padding: 15px 53px;
+  display: block;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

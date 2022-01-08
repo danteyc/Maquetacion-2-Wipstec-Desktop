@@ -1,0 +1,247 @@
+$primary_color: #05448E;
+$secondary_color: #FECE00;
+$base_font: 'Poppins', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $base_font;
+    font-size: 15px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+header{
+    box-shadow: 0 3px rgba(0, 0, 0, 0.25);
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        .header__1{
+            img{
+                width: 240px;
+            }
+        }
+        .header__2{
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                margin-right: 12px;
+                li{
+                    margin-right: 12px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        font-weight: 400;
+                        color: #838383;
+                        text-transform: uppercase;
+                    }
+                    &:hover{
+                        a{
+                            color: $primary_color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .active{
+                    a{
+                        color: $primary_color;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .header__phone{
+                margin-right: 12px;
+                a{
+                    color: $primary_color;
+                    font-family: "Arial";
+                    font-size: 20px;
+                    i{
+                        font-size: 17px;
+                    }
+                }
+            }
+            .header__myaccount{
+                a{
+                    background-color: $primary_color;
+                    color: white;
+                    font-size: 17px;
+                    font-weight: 500;
+                    padding: 12px 17px;
+                    border-radius: 10px ;
+                }
+            }
+        }
+    }
+}
+
+section{
+    margin-bottom: 50px;
+}
+.cover{
+    background-image: url("../src/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    height: 550px;
+    .container{
+        position: relative;
+        height: 100%;
+        .cover__info{
+            width: 30%;
+            position: absolute;
+            right: 10%;
+            top: 22%;
+            h1{
+                color: white;
+                text-align: center;
+                font-size: 45px;
+                font-weight: 700;
+                margin-bottom: 40px;
+                .yellow{
+                    color: $secondary_color;
+                }
+            }
+            a{
+                display: block;
+                width: 70%;
+                background-color: #FFFFFF;
+                color: $primary_color;
+                padding: 15px 42px;
+                text-align: center;
+                margin: 0 auto;
+                font-weight: 600;
+                font-size: 20px;
+                border-radius: 10px;
+            }
+        }
+        .cover__slick-dots{
+            width: 80px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 2%;
+            left: calc(50% - 66px);
+            .cover__dot{
+                width: 15px;
+                height: 15px;
+                border: 1px solid #CCCCCC;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .active{
+                background-color: #CCCCCC;
+            }
+        }
+    }
+}
+
+.plans{
+    .plans__title{
+        margin-bottom: 40px;
+        text-align: center;
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 35px;
+        }
+        hr{
+            margin: 0 auto;
+            border-bottom: 2px solid $primary_color;
+        }
+    }
+
+    .plans__list{
+        display: flex;
+        justify-content: space-between;
+        .plan{
+            width: 24%;
+            border: 2px solid #CCCCCC;
+            border-radius: 5px;
+            padding: 24px 20px;
+            .plan__name{
+                color: #777777;
+                font-size: 25px;
+                font-weight: 600;
+                text-align: center;
+            }
+            .plan__velocity{
+                color: $primary_color;
+                font-size: 30px;
+                font-weight: 700;
+                text-align: center;
+                span{
+                    font-size: 45px;
+                }
+            }
+            .plan__type{
+                color: #777777;
+                font-weight: 600;
+                font-size: 16px;
+                text-align: center;
+                margin-top: -11px;
+            }
+            .plan__price{
+                font-size: 20px;
+                font-weight: 400;
+                color: #505050;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                span{
+                    font-weight: 700;
+                    font-size: 25px;
+                }
+            }
+            .plan__features{
+                font-size: 15px;
+                font-weight: 300;
+                border-bottom: 1px solid #CCCCCC;
+                padding-bottom: 14px;
+                div{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 40px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .plan__other-info{
+                padding: 20px 0;
+                i{
+                    color: $primary_color;
+                }
+                a{
+                    text-decoration: underline;
+                    color: $primary_color;
+                }
+            }
+            .plan__hire{
+                background-color: $primary_color;
+                color: white;
+                padding: 15px 53px;
+                display: block;
+                width: 90%;
+                text-align: center;
+                border-radius: 10px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
