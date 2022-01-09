@@ -169,6 +169,7 @@ section{
     .plans__list{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
         .plan{
             width: 24%;
             border: 2px solid #CCCCCC;
@@ -241,6 +242,96 @@ section{
                 text-align: center;
                 border-radius: 10px;
                 margin: 0 auto;
+            }
+        }
+    }
+    .plans__terms{
+        font-weight: 300;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+.benefits{
+    .container{
+        display: flex;
+        padding: 10px;
+        .benefits__image{
+            width: 35%;
+            img{
+                width: 100%;
+            }
+        }
+        .benefits__list{
+            width: 70%;
+            padding: 0 57px;
+            h2{
+                font-weight: 600;
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 74px;
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                .benefit{
+                    width: 30%;
+                    .benefit__icon{
+                        width: 92px;
+                        height: 92px;
+                        background-color: #CCCCCC;
+                        margin: 0 auto;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        color: $primary_color;
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-align: center;
+                        line-height: 27px;
+                        height: 54px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.indicators{
+    height: 600px;
+    background-image: url("../src/Subtract.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    .container{
+        height: 100%;
+        .indicators__left{
+            position: relative;
+            width: 40%;
+            height: 100%;
+            h2{
+                color: #FFFFFF;
+                font-weight: 700;
+                font-size: 35px;
+                width: 70%;
+                position: absolute;
+                top: 8%;
+                left: 12%;
+                span{
+                    color: $secondary_color;
+                    font-size: 38px;
+                }
+            }
+            figure{
+                width: 90%;
+                position: absolute;
+                bottom: 0;
+                img{
+                    display: block;
+                    width: 100%;
+                }
             }
         }
     }

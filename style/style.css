@@ -208,6 +208,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .plans .plans__list .plan {
@@ -300,5 +301,120 @@ section {
   text-align: center;
   border-radius: 10px;
   margin: 0 auto;
+}
+
+.plans .plans__terms {
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
+
+.benefits .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.benefits .container .benefits__image {
+  width: 35%;
+}
+
+.benefits .container .benefits__image img {
+  width: 100%;
+}
+
+.benefits .container .benefits__list {
+  width: 70%;
+  padding: 0 57px;
+}
+
+.benefits .container .benefits__list h2 {
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.benefits .container .benefits__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits .container .benefits__list ul .benefit {
+  width: 30%;
+}
+
+.benefits .container .benefits__list ul .benefit .benefit__icon {
+  width: 92px;
+  height: 92px;
+  background-color: #CCCCCC;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.benefits .container .benefits__list ul .benefit p {
+  color: #05448E;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  line-height: 27px;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.indicators {
+  height: 600px;
+  background-image: url("../src/Subtract.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.indicators .container {
+  height: 100%;
+}
+
+.indicators .container .indicators__left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+.indicators .container .indicators__left h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 35px;
+  width: 70%;
+  position: absolute;
+  top: 8%;
+  left: 12%;
+}
+
+.indicators .container .indicators__left h2 span {
+  color: #FECE00;
+  font-size: 38px;
+}
+
+.indicators .container .indicators__left figure {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+}
+
+.indicators .container .indicators__left figure img {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
