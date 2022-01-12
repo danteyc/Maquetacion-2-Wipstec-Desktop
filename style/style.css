@@ -607,12 +607,12 @@ footer .footer-1 .container .footer__phone-cont p {
 
 footer .footer-1 .container .footer__phone-cont a {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 23px;
   color: white;
   background-color: #05448E;
   display: block;
-  width: 90%;
-  padding: 4% 4%;
+  width: 70%;
+  padding: 3% 4%;
   margin: 0 auto;
   text-align: center;
   border-radius: 10px;
